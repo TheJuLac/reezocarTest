@@ -1,0 +1,40 @@
+/** Feuille de style components/search **/
+
+.rz_search {
+    &-box {
+        &__label {
+            visibility: hidden;
+            position: absolute;
+        }
+        
+        &__input {
+            border: 1px solid $grey-border;
+            padding: 1.3rem 1rem 1.2rem;
+            width: 100%;
+            border-radius: .4rem;
+         
+            &::placeholder {
+                font-family: 'Source Sans Pro', sans-serif;
+                color: $font-blue;
+                font-size: 1.6rem;
+              
+            }
+        }
+
+        &__wrapper {
+            position: relative;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        &__btn {
+            position: absolute;
+            right: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+            border: 0;
+            background: transparent;
+
+        }
+    }
+}

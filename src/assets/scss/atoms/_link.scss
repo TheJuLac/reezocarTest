@@ -1,0 +1,11 @@
+/** Feuille de style atoms/link **/
+
+a.rz_link {
+    @include rz-font-size($font-SSP, 1.6, 600, 20.8px, $font-blue);
+    text-decoration: none;
+    &:visited,
+    &:hover,
+    &:active {
+        text-decoration: none;
+    }
+}

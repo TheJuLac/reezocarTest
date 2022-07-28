@@ -1,0 +1,14 @@
+/** Feuille de style atoms/btn **/
+
+.rz_btn {
+    display: block;
+    padding: 1.5rem 4rem;
+    border: 0;
+    border-radius: 2.4rem;
+    text-decoration: none;
+
+    &--primary {
+        @include rz-btn($white, $red-sg);
+        @include rz-font-size($font-SSP, 1.6, 600, 20.8px, $white);
+    }
+}

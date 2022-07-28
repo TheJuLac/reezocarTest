@@ -1,0 +1,15 @@
+/** Feuille de style atoms/title **/
+
+.rz_title {
+    &--h1 {
+        @include rz-font-size($font-SSP, 3.6, 700, 45.25px, $font-blue);
+    }
+
+    &--h2 {
+        @include rz-font-size($font-SSP, 2.8, 700, 36.4px, $font-blue);
+    }
+
+    &--h3 {
+        @include rz-font-size($font-SSP, 1.8, 700, 22.63px, $font-blue);
+    }
+}

@@ -1,0 +1,75 @@
+/** Feuille de style components/nav **/
+
+.rz_nav {
+    display: flex;
+    flex-flow: row nowrap;
+
+    &__item {
+        display: flex;
+        align-items: center;
+        font-weight: 600;
+        margin: 0 3rem;
+
+        & > .rz_btn {
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size: 1.6rem;
+            font-weight: 600;
+            color: $font-blue;
+            padding-right: 0;
+
+            &--call {
+                padding: .8rem 2rem .7rem 4.4rem;
+                border-radius: 2.4rem;
+                text-align: center;
+                position: relative;
+                &:before {
+                    content: '';
+                    background-image: url('../../dist/img/phone.svg');
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    position: absolute;
+                    top: 50%;
+                    left: 1.9rem;
+                    transform: translateY(-50%);
+                    width: 1.6rem;
+                    height: 1.6rem;
+                    }
+                span {
+                    display: block;
+                    font-size: 1rem;
+                    font-style: italic;
+                }
+            }
+        }
+
+        &:first-child {
+            margin-left: 0;
+            & > .rz_btn {
+                &:first-child {
+                    position: relative;
+                    &:after {
+                        display: block;
+                        content:"";
+                        background-image: url('../../dist/img/arrow.svg');
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        right: -13px;
+                        width: 13px;
+                        height: 7px;
+                    }
+                }
+            }
+        }
+
+        &:last-child {
+            margin-right: 0;
+            & > .rz_btn {
+                background-color: $red-sg;
+                color: $white;
+            }
+        }
+    }
+}

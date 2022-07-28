@@ -1,0 +1,23 @@
+/** Feuille de style layouts/header **/
+
+.rz_header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1.6rem 0;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+
+    &__wrapper {
+        padding: 0 5rem;
+        &:first-child {
+            padding-right: 0;
+        }
+        &:nth-child(2) {
+            flex-grow: 1;
+        }
+
+        &:last-child {
+            padding-left: 0;
+        }
+    }
+}

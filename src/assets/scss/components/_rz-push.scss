@@ -1,0 +1,53 @@
+/** Feuille de style components/push **/
+
+.rz_push {
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+    margin-top: 5rem;   
+
+    &__item {
+        padding: 3rem 1.5rem;
+        max-width: 25rem;
+        width: 100%;
+        box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.1);
+        border-radius: .4rem;
+        margin-right: 2.5rem;
+        margin-bottom: 3.5rem;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__content {
+        @include rz-font-size($font-SSP, 1.4, 400, 17.6px, $font-blue);
+    }
+
+    &__thumbnail {
+        height: 4rem;
+    }
+
+    &__link {
+        text-decoration: underline;
+        @include rz-font-size($font-SSP, 1.4, 400, 17.6px, $font-blue);
+        
+    }
+
+    &__thumbnail,
+    &__title {
+        margin-bottom: 1.7rem,
+    }
+
+    &--option {
+        flex-wrap: nowrap;
+        .rz_push__item {
+            max-width: inherit;
+            flex-basis: 50%;
+
+            .rz_btn {
+                margin-top: 2.2rem;
+            }
+        }
+    }
+}

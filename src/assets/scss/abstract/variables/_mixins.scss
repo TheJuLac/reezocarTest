@@ -1,0 +1,23 @@
+/** Feuille de style abstract/variables/mixins **/
+
+@mixin rem-font-size($sizeValue) {
+    font-size: ($sizeValue * 10) + px;
+}
+
+@mixin rz-font-size($font-family, $font-size, $font-weight, $line-height, $color) {
+    font-family: $font-family;
+    @include rem-font-size($font-size);
+    font-weight: $font-weight;
+    line-height: $line-height;
+    color: $color;
+}
+
+@mixin rz-btn($color, $bcg-color) {
+    color: $color;
+    background-color: $bcg-color;
+}
+
+@mixin rz-btn--hover($color, $bcg-color) {
+    color: $color;
+    background-color: $bcg-color;
+}

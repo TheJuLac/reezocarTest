@@ -1,0 +1,59 @@
+/** Feuille de style components/keypoints **/
+
+.rz_keypoints {
+    margin-top: 5.8rem;
+    position: relative;
+
+    &__wrapper {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        position: relative;
+        z-index: 2;
+
+        .rz_keypoints__thumbnail,
+        .rz_keypoints__content {
+            flex-basis: 50%;
+        }
+
+        .rz_keypoints__content {
+            .rz_txt:not(:first-child) {
+                margin-top: 2rem;
+            }
+        }
+
+        .rz_keypoints__thumbnail {
+            img {
+                max-height: 37.5rem;
+            }
+        }
+
+        &:nth-child(2) {
+            margin-top: 8rem;
+            margin-bottom: 11.7rem;
+            .rz_keypoints__content {
+                flex-basis: 70%;
+            }
+            .rz_keypoints__thumbnail {
+                flex-basis: 30%;
+                img {
+                    max-width: 65rem;
+                    margin-right: -8rem;
+                }
+            }
+        }
+    }
+
+    &__link {
+        position: absolute;
+        z-index: 1;
+        top: 18%;
+        left: 35%;
+        opacity: .9;
+
+        &:last-child {
+            top: 55%;
+            left: 21%;
+        }
+    }
+}

@@ -1,0 +1,9 @@
+/** Feuille de style atoms/txt **/
+
+.rz_txt {
+    @include rz-font-size($font-SSP, 1.6, 400, 20.8px, $font-blue);
+
+    &--bold {
+        font-weight: 700;
+    }
+}
