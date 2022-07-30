@@ -9,15 +9,24 @@
 
     &__wrapper {
         padding: 0 5rem;
+        @include for-size(desktop-sm) { 
+            padding: 0 2rem;
+        }
         &:first-child {
             padding-right: 0;
         }
         &:nth-child(2) {
             flex-grow: 1;
+            @include for-size(tablet) {
+                display: none;
+            }
         }
 
         &:last-child {
             padding-left: 0;
+            @include for-size(tablet) {
+                display: none;
+            }
         }
     }
 }

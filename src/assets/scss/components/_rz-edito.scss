@@ -1,0 +1,56 @@
+
+.rz_edito {
+    display: flex;
+    flex-flow: row nowrap;
+    position: relative;
+    z-index: 1;
+    &:before {
+        content: ''; 
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left:  -35%;
+        top: 0;
+        z-index: -1;
+        background-color: $green;
+        @include for-size(mobile) {
+            width: 100vw;
+            left: -20px;
+        }
+        
+    }
+
+    @include for-size(mobile) {
+        flex-direction: column;
+    }
+
+    &__content {
+        margin: 10.5rem 0;
+        flex-basis: 50%;
+        text-align: right;
+        @include for-size(mobile) {
+            flex-basis: 100%;
+            text-align: center;
+        }
+
+        .rz_title--h2,
+        .rz_txt {
+            margin-bottom: 3rem;
+        }
+    }
+
+    &__thumbnail {
+        flex-basis: 50%;
+        position: relative;
+        img {
+            max-width: 580px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 15%;
+        }
+        @include for-size(mobile) {
+            display: none;
+        }
+    }
+}

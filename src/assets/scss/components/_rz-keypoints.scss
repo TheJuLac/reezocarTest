@@ -14,6 +14,9 @@
         .rz_keypoints__thumbnail,
         .rz_keypoints__content {
             flex-basis: 50%;
+            @include for-size(tablet) { 
+                flex-basis: 100%;
+            }
         }
 
         .rz_keypoints__content {
@@ -25,7 +28,14 @@
         .rz_keypoints__thumbnail {
             img {
                 max-height: 37.5rem;
+                @include for-size(desktop-sm) { 
+                    max-height: 25.5rem;
+                }
+
             }
+        }
+        @include for-size(mobile) {
+            flex-direction: column;
         }
 
         &:nth-child(2) {
@@ -33,13 +43,55 @@
             margin-bottom: 11.7rem;
             .rz_keypoints__content {
                 flex-basis: 70%;
+                @include for-size(desktop-sm) { 
+                    flex-basis: 80%;
+                    .rz_push {
+                        justify-content: flex-start;
+                    }
+                }
+                @include for-size(tablet) {
+                    flex-basis: 100%;
+                    .rz_push {
+                        justify-content: center;
+                    }
+                }
             }
             .rz_keypoints__thumbnail {
                 flex-basis: 30%;
+                @include for-size(tablet) { 
+                    display: none;
+                }
                 img {
                     max-width: 65rem;
-                    margin-right: -8rem;
+                    margin-right: -17rem;
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    right: 0;
+                    @include for-size(desktop-sm) { 
+                        max-height: 36.5rem;
+                        right: 0;
+                    }
+
+                    @include for-size(tablet) { 
+                        position: inherit;
+                        margin-right: 0;
+                    }
+                    
                 }
+                @include for-size(tablet) {
+                    flex-basis: 20%;
+                }
+            }
+            @include for-size(tablet) { 
+                flex-direction: column-reverse;
+                margin-bottom: 0;
+            }
+        }
+        
+        &:nth-child(3) {
+            @include for-size(tablet) { 
+                flex-direction: column;
             }
         }
     }
@@ -50,6 +102,9 @@
         top: 18%;
         left: 35%;
         opacity: .9;
+        @include for-size(desktop-sm) { 
+            display: none;
+        }
 
         &:last-child {
             top: 55%;

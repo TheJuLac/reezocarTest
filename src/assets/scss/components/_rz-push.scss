@@ -17,6 +17,10 @@
 
         &:last-child {
             margin-right: 0;
+            @include for-size(tablet) { 
+                margin-right: 0;
+            }
+            
         }
     }
 

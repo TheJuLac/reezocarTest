@@ -21,3 +21,22 @@
     color: $color;
     background-color: $bcg-color;
 }
+
+// Mediaqueries
+
+
+@mixin for-size($size) {
+    @if $size == desktop-sm {
+        @media (max-width: 1200px) { 
+            @content; 
+        }
+    } @else if $size == tablet {
+        @media (max-width: 992px) { 
+            @content; 
+        }
+    } @else if $size == mobile {
+        @media (max-width: 768px) { 
+            @content; 
+        }
+    }
+}

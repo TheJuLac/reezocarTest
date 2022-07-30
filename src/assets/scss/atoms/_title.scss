@@ -3,13 +3,28 @@
 .rz_title {
     &--h1 {
         @include rz-font-size($font-SSP, 3.6, 700, 45.25px, $font-blue);
+        @include for-size(desktop-sm) { 
+            margin-top: 5rem;
+        }
     }
 
     &--h2 {
-        @include rz-font-size($font-SSP, 2.8, 700, 36.4px, $font-blue);
+            @include rz-font-size($font-SSP, 3.4, 700, 42.74px, $font-blue);
+        &--small {
+            @include rz-font-size($font-SSP, 2.8, 700, 36.4px, $font-blue);
+        }
+
+        &--white {
+            color: $white;
+        }
+
     }
 
     &--h3 {
         @include rz-font-size($font-SSP, 1.8, 700, 22.63px, $font-blue);
+    }
+
+    &--h4 {
+        @include rz-font-size($font-SSP, 2, 700, 26px, $font-blue);
     }
 }

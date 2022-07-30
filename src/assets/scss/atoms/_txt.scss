@@ -6,4 +6,14 @@
     &--bold {
         font-weight: 700;
     }
+
+    &--white {
+        color: $white;
+    }
+
+    &--mentions {
+        @include rz-font-size($font-SSP, 1, 400, 12.57px, $black);
+        font-style: italic;
+        margin-bottom: 2rem;
+    }
 }

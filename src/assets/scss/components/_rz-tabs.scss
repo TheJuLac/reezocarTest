@@ -1,0 +1,65 @@
+.rz_tabs {
+    margin: 4.8rem 0;
+
+    &__input {
+        position: absolute;
+        left: -10000px;
+    }
+
+    .rz_tabs__items {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        .rz_btn--tab {
+            margin-right: 1.5rem;
+            @include for-size(desktop-sm) {
+                margin-bottom: 1rem;
+                min-width: 240px;
+                text-align: center;
+            }
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+
+    &__panel {
+        background-color: #fff;
+        display: none;
+        width: 100%;
+        flex-basis: auto;
+
+        & > .rz_txt {
+            margin-top: 4.8rem;
+        }
+    }
+
+    .tab {
+        display: inline-block;
+        padding: 10px;
+        vertical-align: top;
+        cursor: hand;
+        cursor: pointer;
+        border-left: 10px solid #ccc;
+
+        &:hover {
+            background-color: #fff;
+        }
+    }
+}
+
+#rz-tab-one:checked~.rz_tabs__items #rz-tab-one-label,
+#rz-tab-two:checked~.rz_tabs__items #rz-tab-two-label,
+#rz-tab-three:checked~.rz_tabs__items #rz-tab-three-label {
+    border-color: $font-blue;
+    background: $font-blue;
+    color: $white;
+}
+
+#rz-tab-one:checked~.rz_tabs__items #rz-tabs-panel-1,
+#rz-tab-two:checked~.rz_tabs__items #rz-tabs-panel-2,
+#rz-tab-three:checked~.rz_tabs__items #rz-tabs-panel-3 {
+    display: block;
+}

@@ -12,11 +12,12 @@
 </head>
 
 <body> 
-    <div class="rz">
+    <main class="rz">
         <header>
             <div class="rz_header">
+                
                 <div class="rz_header__wrapper">
-                    <a href="" class="rz_logo" title="page d'accueil"></a> 
+                    <a href="#" class="rz_logo" title="page d'accueil"></a> 
                         <img src="dist/img/logos.svg" alt="logo SG Reezocar" />
                     </a>
                 </div>
@@ -39,10 +40,10 @@
                             <button class="rz_btn">Financement</button>
                         </li>
                         <li class="rz_nav__item">
-                            <a href="" class="rz_link">Reprise</a>
+                            <a href="#" class="rz_link">Reprise</a>
                         </li>
                         <li class="rz_nav__item">
-                            <a href="" class="rz_link">Offre et services</a>
+                            <a href="#" class="rz_link">Offre et services</a>
                         </li>
                         <li class="rz_nav__item">
                             <button class="rz_btn rz_btn--call">
@@ -57,13 +58,13 @@
         <div class="rz_main">
             <h1 class="rz_title rz_title--h1 text-center">Offre et services</h1>
             <p class="rz_txt text-center">Retrouvez ici tous les services proposés par Reezocar pour vous accompagner pendant toutes les étapes de votre projet automobile.</p>
-            <div class="rz_keypoints">
+            <section class="rz_keypoints">
                 <div class="rz_keypoints__wrapper">
                     <div class="rz_keypoints__thumbnail">
                         <img src="dist/img/peugeot-1.png" alt="vehicule peugeot 1">
                     </div>
                     <div class="rz_keypoints__content">
-                        <h2 class="rz_title rz_title--h2">1. Votre véhicule certifié</h2>
+                        <h2 class="rz_title rz_title--h2--small">1. Votre véhicule certifié</h2>
                         <p class="rz_txt">Reezocar vous propose <span class="rz_txt--bold">une gamme de véhicules neufs et d'occasion</span> sélectionnée par nos spécialistes.</p>
                         <p class="rz_txt">Les véhicules d’occasion certifiés chez Reezocar sont <span class="rz_txt--bold">contrôlés et reconditionnés</span>, ils respectent les <b>nombreux points de contrôle</b> de notre charte de reconditionnement en fonction de leur âge et leur kilométrage.</p>
                         <p class="rz_txt"><span class="rz_txt--bold">Retrouvez ci-dessous les services de notre offre certifiée.</span></p>
@@ -72,7 +73,7 @@
 
                 <div class="rz_keypoints__wrapper">
                     <div class="rz_keypoints__content">
-                        <h2 class="rz_title rz_title--h2">2.  Avec un package de services inclus :</h2>
+                        <h2 class="rz_title rz_title--h2--small">2.  Avec un package de services inclus :</h2>
                         <div class="rz_push">
                             <div class="rz_push__item">
                                 <img class="rz_push__thumbnail" src="dist/img/accompagnement-perso.svg" alt="accompagnement personnalisé">
@@ -83,7 +84,7 @@
                                 <img class="rz_push__thumbnail" src="dist/img/reconditionnement.svg" alt="reconditionnement">
                                 <h3 class="rz_push__title rz_title--h3">Reconditionnement</h3>
                                 <p class="rz_push__content">Votre véhicule est contrôlé et reconditionné en fonction de son âge et de son kilométrage.</p>
-                                <a href="" class="rz_push__link">Voir la charte</a>
+                                <a href="#" class="rz_push__link">Voir la charte</a>
                             </div>
                             <div class="rz_push__item">
                                 <img class="rz_push__thumbnail" src="dist/img/satisfait-rembourse.svg" alt="satisfait ou remboursé">
@@ -116,19 +117,19 @@
                         <img src="dist/img/peugeot-3.png" alt="vehicule peugeot 3">
                     </div>
                     <div class="rz_keypoints__content">
-                        <h2 class="rz_title rz_title--h2">3. et personnalisable avec :</h2>
+                        <h2 class="rz_title rz_title--h2--small">3. et personnalisable avec :</h2>
                         <div class="rz_push rz_push--option">
                             <div class="rz_push__item">
                                 <img class="rz_push__thumbnail" src="dist/img/financement.svg" alt="modes de financement">
                                 <h3 class="rz_push__title rz_title--h3">Mode de financement</h3>
                                 <p class="rz_push__content">Un financement (LOA, LLD ou Crédit) adpaté à votre besoin + ou acheter comptant.</p>
-                                <a href="" class="rz_btn rz_btn--primary">En savoir plus</a>
+                                <a href="#" class="rz_btn rz_btn--primary">En savoir plus</a>
                             </div>
                             <div class="rz_push__item">
                                 <img class="rz_push__thumbnail" src="dist/img/reprise.svg" alt="reprise">
                                 <h3 class="rz_push__title rz_title--h3">Reprise</h3>
                                 <p class="rz_push__content">Nous vous proposons une solution pour reprendre votre ancien véhicule.</p>
-                                <a href="" class="rz_btn rz_btn--primary">En savoir plus</a>
+                                <a href="#" class="rz_btn rz_btn--primary">En savoir plus</a>
                             </div>
                         </div>
                     </div>
@@ -139,8 +140,245 @@
                 <div class="rz_keypoints__link">
                     <img src="dist/img/step2-linkTo-step3.svg" alt="decoration">
                 </div>
-            </div>
-        </div>
-    </div>
+            </section>
+            <h2 class="rz_title rz_title--h2 text-center">Nos garanties</h1>
+            <p class="rz_txt text-center">Retrouvez les garanties correspondant à votre futur véhicule.</p>
 
+            <section class="rz_tabs">
+  
+                <input class="rz_tabs__input" type="radio" title="rz-tab-one" name="rz-tabs-input" id="rz-tab-one" checked />
+                <input class="rz_tabs__input" type="radio" title="rz-tab-two" name="rz-tabs-input" id="rz-tab-two" />
+                <input class="rz_tabs__input" type="radio" title="rz-tab-three" name="rz-tabs-input" id="rz-tab-three" />
+            
+                <div class="rz_tabs__items">
+                    <label for="rz-tab-one" id="rz-tab-one-label" class="rz_btn rz_btn--tab">Achat Comptant</label>
+                    <label for="rz-tab-two" id="rz-tab-two-label" class="rz_btn rz_btn--tab">LOA & Crédit auto</label>
+                    <label for="rz-tab-three" id="rz-tab-three-label" class="rz_btn rz_btn--tab">Location Longue Durée</label>
+            
+            
+                    <div id="rz-tabs-panel-1" class="rz_tabs__panel active">
+                        <p class="rz_txt text-center">Garantie <span class="rz_txt--bold">pièce et main d’oeuvre valable en Europe pendant 12 mois</span>, sans avance de frais ni franchise kilométrique. La garantie prend effet à la date de livraison du véhicule.</p>
+                        <div class="rz_card">
+                            <div class="rz_card__wrapper">
+                                <div class="rz_card__item">
+                                    <h4 class="rz_title--h4">Garantie Optimal 12 mois</h4>
+                                    <div class="rz_card__content">
+                                        <p class="rz_card__label">Véhicule de moins de 6 ans et 80 000 kms :</p>
+                                        <p class="rz_txt">Vous trouverez ici les différences couvertures pris en charge : </p>
+                                        <ul class="rz_card__list">
+                                            <li class="rz_card__list-item">Moteur</li>
+                                            <li class="rz_card__list-item">Refroidissement</li>
+                                            <li class="rz_card__list-item">Elements de confort</li>
+                                            <li class="rz_card__list-item">Pont</li>
+                                            <li class="rz_card__list-item">Turbo</li>
+                                            <li class="rz_card__list-item">Transmission</li>
+                                            <li class="rz_card__list-item">Boite</li>
+                                            <li class="rz_card__list-item">Main d'oeuvre</li>
+                                            <li class="rz_card__list-item">Climatisation</li>
+                                            <li class="rz_card__list-item">Freinage</li>
+                                            <li class="rz_card__list-item">Suspension</li>
+                                            <li class="rz_card__list-item">Direction</li>
+                                            <li class="rz_card__list-item">Electronique</li>
+                                            <li class="rz_card__list-item">Alimentation</li>
+                                            <li class="rz_card__list-item">Composants éléctriques</li>
+                                            <li class="rz_card__list-item">Refroidissement</li>
+                                            <li class="rz_card__list-item">Ingrédients</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="rz_card__item">
+                                    <h4 class="rz_title--h4">Garantie Safe 12 mois</h4>
+                                    <div class="rz_card__content">
+                                        <p class="rz_card__label">Véhicule de plus de 6 ans et 80 000 kms :</p>
+                                        <p class="rz_txt">Vous trouverez ici les différences couvertures pris en charge : </p>
+                                            <ul class="rz_card__list">
+                                                <li class="rz_card__list-item">Moteur</li>
+                                                <li class="rz_card__list-item">Pont</li>
+                                                <li class="rz_card__list-item">Boite de vitesse</li>
+                                            </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="rz-tabs-panel-2" class="rz_tabs__panel">
+                        <div class="rz_card">
+                            <div class="rz_card__wrapper">
+                                <div class="rz_card__item">
+                                    <h4 class="rz_title--h4">Garantie Valeur d'Achat</h4>
+                                    <div class="rz_card__content">
+                                        <p class="rz_card__label">Votre capital auto préservé <sup>(1)</sup></p>
+                                        <p class="rz_txt">En cas de destruction totale ou de vol total de votre véhicule, votre véhicule est remboursé à son prix d’achat jusqu’à 7 ans.</p>
+                                        <p class="rz_card__label">Votre mobilité est garantie <sup>(1)</sup></p>
+                                        <p class="rz_txt">Vous bénéficiez d’un véhicule de prêt jusqu’à 40 jours, en cas de sinistre.</p>
+                                    </div>
+                                </div>
+                                <div class="rz_card__item">
+                                    <h4 class="rz_title--h4">Assurance Protection Pécuniaire</h4>
+                                    <div class="rz_card__content">
+                                        <p class="rz_card__label">Votre financement est soldé <sup>(1)</sup></p>
+                                        <p class="rz_txt mt-0">En cas de destruction totale ou de vol de votre véhicule, l’assurance permet de solder votre financement. Vous ne remboursez plus un véhicule dont vous n’avez plus l’usage.</p>
+                                        <p class="rz_card__label mt-1-7">Votre apport est protégé <sup>(1)</sup></p>
+                                        <p class="rz_txt">L’assurance rembourse votre apport en cas de destruction totale ou de vol <sup>(2)</sup>.</p>
+                                    </div>
+                                </div>
+                                <div class="rz_card__item">
+                                    <h4 class="rz_title--h4">Garantie mécanique ou garantie longue durée (GLD)</h4>
+                                    <div class="rz_card__content">
+                                        <p class="rz_card__label">Vous roulez en toute tranquillité <sup>(1)</sup></p>
+                                        <p class="rz_txt">Votre véhicule est garanti jusqu’à 7 ans, pièces et main d’œuvre, kilométrage illimité.</p>
+                                        <p class="rz_card__label">Votre budget est maîtrisé <sup>(1)</sup></p>
+                                        <p class="rz_txt">L’assurance prend en charge les pannes mécaniques, électriques, électroniques, sans avance de frais.</p>
+                                        <p class="rz_card__label">Votre mobilité est préservée <sup>(1)</sup></p>
+                                        <p class="rz_txt">Vous bénéficiez d’un véhicule de remplacement jusqu’à 90 jours, en cas de panne.</p>
+                                    </div>
+                                </div>
+                                <div class="rz_card__item">
+                                    <h4 class="rz_title--h4">Révisions et pièces d'usures (RPU)</h4>
+                                    <div class="rz_card__content">
+                                        <p class="rz_card__label">Votre budget est maîtrisé <sup>(1)</sup></p>
+                                        <p class="rz_txt">Votre budget entretien est mensualisé et sous contrôle, sans avance de frais, kilométrage illimité.</p>
+                                        <p class="rz_card__label">Vous roulez dans un véhicule fiable <sup>(1)</sup></p>
+                                        <p class="rz_txt">L’assurance prend en charge les révisions périodiques, les pièces d’usure, les contrôles techniques, les ingrédients/appoints d’huile.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="rz-tabs-panel-3" class="rz_tabs__panel">
+                        <div class="rz_card">
+                            <div class="rz_card__wrapper">
+                                <div class="rz_card__item">
+                                    <h4 class="rz_title--h4">Maintenance</h4>
+                                    <div class="rz_card__content">
+                                        <p class="rz_txt rz_txt--check">Prise en charge des entretiens, révisions et contrôles conformes aux plans constructeurs. Entretiens réguliers, réparations mécaniques incluses sans limite dans le cadre d'un usage normal, prise en charge du contrôle technique, sans aucuns frais à avancer.</p>
+                                    </div>
+                                </div>
+                                <div class="rz_card__item">
+                                    <h4 class="rz_title--h4">Pneumatique</h4>
+                                    <div class="rz_card__content">
+                                        <p class="rz_txt rz_txt--check">Renouvellement des pneumatiques prévu dans la prestation, leur nombre est défini au contrat en fonction du kilométrage souscrit. La prestation pneumatiques vous permet de rouler dans les meilleures conditions de sécurité tout au long de votre location.</p>
+                                    </div>
+                                </div>
+                                <div class="rz_card__item">
+                                    <h4 class="rz_title--h4">Assistance associée à la maintenance</h4>
+                                    <div class="rz_card__content">
+                                        <p class="rz_txt rz_txt--check">Garantie de votre mobilité en cas de panne, d’accident, de tentative de vol ou d’acte de vandalisme. Dépannage, retour au domicile, véhicule de remplacement 7j/7, 24h/24 en France et à l’étranger.</p>
+                                    </div>
+                                </div>
+                                <div class="rz_card__item">
+                                    <h4 class="rz_title--h4">Assurance Décès Incapactité de Travail (DIT) facultative</h4>
+                                    <div class="rz_card__content">
+                                        <p class="rz_txt rz_txt--check">En cas de décès ou de perte totale et irréversible d'autonomie (PTIA), prise en charge totale de l'ajustement de fin de contrat.</p>
+                                        <p class="rz_txt"> Prise en charge des loyers en cas d'incapacité temporaire de travail (ITT). </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="rz_edito">
+                <div class="rz_edito__content">
+                    <h2 class="rz_title--h2 rz_title--h2--white">Reezocar, engagé pour la planète</h2>
+                    <p class="rz_txt rz_txt--white"><span class="rz_txt--bold">Votre véhicule émet environ 2 tonnes de CO2 par an. Reezocar vous permet de compenser cette consommation et de faire une bonne action !</span></p>
+                    <p class="rz_txt rz_txt--white">Lorsque vous achetez un véhicule certifié avec Reezocar, nous vous permettons de compenser vos émissions de CO2 pendant une année entière <span class="rz_txt--bold">grâce au financement de 2 crédits carbone labellisés ainsi que la contribution à la plantation d'arbres au Pérou et en France.</span></p>
+                    <a href="#" class="rz_btn rz_btn--white">En savoir plus</a>
+                </div>
+                <div class="rz_edito__thumbnail">
+                    <img src="dist/img/plantact.png" alt="photo plant & act" />
+                </div>
+            </section>
+            <section class="rz_mentions">
+                <p class="rz_txt rz_txt--mentions"><span class="rz_txt--bold">Garantie valeur d’achat :</span> (1) Dans la limite des conditions et garanties prévues au contrat. Prestation disponible en crédit et en Location avec Option d’Achat. Contrat d’assurance collective de dommages « Garantie Valeur d&#39;Achat » souscrit par CGL auprès de SOGESSUR, entreprise régie par le Code des assurances. Contrat « Assistance Véhicule de Remplacement » souscrit par CGL auprès d’OPTEVEN ASSURANCES. Contrats présentés par CGL, courtier d’assurance, n° ORIAS 07027148 (www.orias.fr) via ses mandataires. Sous réserve d’acceptation par CGL, Compagnie Générale de Location d’Équipements, CGI FINANCE, SA au capital de 58 606 156 € - 69 avenue de Flandre 59 708 Marcq-en-Baroeul Cedex – SIREN 303 236 186 – RCS Lille Métropole. CGL est une société du Groupe Société Générale.</p>
+                <p class="rz_txt rz_txt--mentions"><span class="rz_txt--bold">Assurance protection pécuniaire :</span> (1) Dans la limite des conditions et garanties prévues au contrat. Prestation disponible en crédit, en Location avec Option d’Achat et en Location Longue Durée.</br>
+                (2) Restitution du montant de votre apport initial en crédit dans la limite de 25% du prix de vente du véhicule, et dans la limite de 35% pour votre premier loyer majoré en Location avec Option d’Achat et Location Longue Durée Contrat d’assurance collective de dommages « Assurance Protection Pécuniaire » souscrit par CGL auprès de SOGESSUR, entreprise régie par le Code des assurances. Contrats présentés par CGL, courtier d’assurance, n°ORIAS 07027148 (www.orias.fr) via ses mandataires. Sous réserve d’acceptation par CGL, Compagnie Générale de Location d’Équipements, CGI FINANCE, SA au capital de 58 606 156 € - 69 avenue de Flandre 59 708 Marcq-en-Baroeul Cedex – SIREN 303 236 186 – RCS Lille Métropole. CGL est une société du Groupe Société Générale.</p>
+                <p class="rz_txt rz_txt--mentions"><span class="rz_txt--bold">Révision et pièces d’usures (RPU) :</span> (1) Dans la limite des conditions et garanties prévues au contrat. Prestation disponible en crédit, en Location avec Option d’Achat et en Location Longue Durée. Contrat de prestation de services « Révisions et Pièces d’Usure » et contrat d’assurance collective de dommages « Réparation Pneus » souscrits par CGL auprès  espectivement d’OPTEVEN SERVICES et d’OPTEVEN ASSURANCES. Contrats présentés par CGL, courtier d’assurance, n° ORIAS 07027148 (www.orias.fr) via ses  andataires. Sous réserve d’acceptation par CGL, Compagnie Générale de Location d’Équipements, CGI FINANCE, SA au capital de 58 606 156 € - 69 avenue de Flandre 59 708 Marcq-en-Baroeul Cedex – SIREN 303 236 186 – RCS Lille Métropole. CGL est une société du Groupe Société Générale.</p>
+                <p class="rz_txt rz_txt--mentions"><span class="rz_txt--bold">Garantie mécanique ou garantie longue durée (GLD) :</span> (1) Dans la limite des conditions et garanties prévues au contrat. Prestation disponible en crédit, en Location avec Option d’Achat et en Location Longue Durée. Contrat d’assurance collective de dommages « Garantie Longue Durée Essentielle ou Intégrale ou Élitisse » souscrit par CGL auprès de SOGESSUR, entreprise régie par le Code des assurances (prestations mises en œuvre par OPTEVEN ASSURANCES). Contrat d’assistance « CGI Finance Assistance » souscrit par CGL auprès d’OPTEVEN ASSURANCES. Contrats présentés par CGL, courtier d’assurance, n° ORIAS 07027148 (www.orias.fr) via ses andataires. Sous réserve d’acceptation par CGL, Compagnie Générale de Location d’Équipements, CGI FINANCE, SA au capital de 58 606 156 € - 69 avenue de Flandre 59 708 Marcq-en-Baroeul Cedex – SIREN 303 236 186 – RCS Lille Métropole. CGL est une société du Groupe Société Générale.</p>
+            </section>
+            <div class="rz_banner rz_banner--grey">
+                <p>Un crédit vous engage et doit être remboursé. Vérifiez vos capacités de remboursement avant de vous engager.</p>
+            </div>
+            <div class="rz_banner">
+                <p>Pour les trajets courts, privilégiez la marche ou le vélo  #SeDéplacerMoinsPolluer</p>
+            </div>
+            <footer class="rz_footer">
+                <div class="rz_footer__container">
+                    <div class="rz_footer__wrapper">
+                        <p class="rz_footer__title">À propos de</p>
+                        <ul class="rz_footer__list">
+                            <li class="rz_footer__item">
+                                <a href="#" class="rz_footer__link">Qui sommes nous ?</a>
+                            </li>
+                            <li class="rz_footer__item">
+                                <a href="#" class="rz_footer__link">Avis Reezocar</a>
+                            </li>
+                            <li class="rz_footer__item">
+                                <a href="#" class="rz_footer__link">Contact</a>
+                            </li>
+                            <li class="rz_footer__item">
+                                <a href="#" class="rz_footer__link">FAQ</a>
+                            </li>
+                            <li class="rz_footer__item">
+                                <a href="#" class="rz_footer__link">Blog</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="rz_footer__wrapper">
+                        <p class="rz_footer__title">Catalogue</p>
+                        <ul class="rz_footer__list">
+                            <li class="rz_footer__item">
+                                <a href="#" class="rz_footer__link">Véhicules en LLD</a>
+                            </li>
+                            <li class="rz_footer__item">
+                                <a href="#" class="rz_footer__link"> Véhicules en LOA</a>
+                            </li>
+                            <li class="rz_footer__item">
+                                <a href="#" class="rz_footer__link">Véhicules en crédit</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="rz_footer__wrapper">
+                        <p class="rz_footer__title">Autres</p>
+                        <ul class="rz_footer__list">
+                            <li class="rz_footer__item">
+                                <a href="#" class="rz_footer__link">Financements</a>
+                            </li>
+                            <li class="rz_footer__item">
+                                <a href="#" class="rz_footer__link">CGU - CGV - Mentions légales</a>
+                            </li>
+                            <li class="rz_footer__item">
+                                <a href="#" class="rz_footer__link">Gérer les cookies</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="rz_footer__wrapper">
+                        <ul class="rz_footer__list rz_footer__social-sharing">
+                            <li class="rz_footer__item">
+                                <a href="#" class="rz_footer__link">
+                                    <img src="dist/img/facebook.svg" alt="lien facebook"> 
+                                </a>
+                            </li>
+                            <li class="rz_footer__item">
+                                <a href="#" class="rz_footer__link">
+                                    <img src="dist/img/twitter.svg" alt="lien twitter"> 
+                                </a>
+                            </li>
+                            <li class="rz_footer__item">
+                                <a href="#" class="rz_footer__link">
+                                    <img src="dist/img/pinterest.svg" alt="lien pinterest"> 
+                                </a>
+                            </li>
+                            <li class="rz_footer__item">
+                                <a href="#" class="rz_footer__link">
+                                    <img src="dist/img/instagram.svg" alt="lien instagram"> 
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="rz_footer__copyrights">Reezocar 2020 - Tous droits réservés</p>
+            </footer>
+        </div>
+    </main>
 </body>

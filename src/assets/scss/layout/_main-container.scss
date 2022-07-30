@@ -2,5 +2,8 @@
 
 .rz_main {
     margin: 7.5rem auto 0 auto;
-    max-width: 1400px;
+    max-width: 1440px;
+    @include for-size(desktop-sm) { 
+        margin: 0 2rem;
+    }
 }

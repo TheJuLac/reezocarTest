@@ -1,14 +1,41 @@
 /** Feuille de style atoms/btn **/
 
 .rz_btn {
-    display: block;
-    padding: 1.5rem 4rem;
+    display: inline-block;
+    padding: 2rem 4rem;
     border: 0;
-    border-radius: 2.4rem;
+    border-radius: 3rem;
     text-decoration: none;
+    transition: all .25s ease-in-out;
+    cursor: pointer;
 
     &--primary {
         @include rz-btn($white, $red-sg);
         @include rz-font-size($font-SSP, 1.6, 600, 20.8px, $white);
+    }
+
+    &--tab {
+        @include rz-btn($font-blue, $white);
+        font-weight: 700;
+        border: 1px solid $font-blue;
+        cursor: pointer;
+
+        &:hover {
+            border-color: $font-blue;
+            background: $font-blue;
+            color: $white;
+        }
+    }
+
+    &--white {
+        @include rz-btn($green, $white);
+        padding: 2rem 10rem;
+        border: 1px solid $white;
+        font-weight: 700;
+        &:hover {
+            border-color: $white;
+            background: $green;
+            color: $white;
+        }
     }
 }
