@@ -18,7 +18,9 @@
         border-radius: .4rem;
         margin-right: 2.5rem;
         margin-bottom: 3.5rem;
-
+        @include for-size(mobile) {
+            margin-right: 0;
+        } 
 
 
         &:last-child {
