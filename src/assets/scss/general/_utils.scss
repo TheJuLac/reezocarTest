@@ -8,3 +8,18 @@ button {
 .text-center {
     text-align: center;
 }
+
+.overlay {
+    width: 100vw;
+    height: 100vh;
+    background-color: $black;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: all .25s ease-in-out;
+    z-index: 2;
+    &.active {
+        opacity: .45;
+    }
+}

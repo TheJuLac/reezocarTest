@@ -1,22 +1,29 @@
 /** Feuille de style layouts/header **/
 
 .rz_header {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 1.6rem 0;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+
+    &__container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 1.6rem 0;
+    }
 
     &__wrapper {
         padding: 0 5rem;
-        @include for-size(desktop-sm) { 
+
+        @include for-size(desktop-sm) {
             padding: 0 2rem;
         }
+
         &:first-child {
             padding-right: 0;
         }
+
         &:nth-child(2) {
             flex-grow: 1;
+
             @include for-size(tablet) {
                 display: none;
             }
@@ -24,9 +31,101 @@
 
         &:last-child {
             padding-left: 0;
+
             @include for-size(tablet) {
                 display: none;
             }
         }
+
+        @include for-size(tablet) {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: flex-start;
+            align-items: flex-start;
+            width: 100%;
+        }
+    }
+
+    &__mobile {
+        display: none;
+        top: 20px;
+        left: 20px;
+        width: 40px;
+        height: 22px;
+        background: none;
+        box-shadow: none;
+        border: none;
+        outline: 0;
+        cursor: pointer;
+        position: relative;
+        z-index: 10;
+        flex-basis: 10%;
+
+        &>.rz_header__btn {
+            width: 100%;
+            cursor: pointer;
+
+            &.open {
+                .rz_header__btn--line {
+                    &:nth-child(1) {
+                        top: 50%;
+                        transform: translateX(-50%) translateY(0) rotate(45deg);
+                        transition: top .3s cubic-bezier(0.21, 0.83, 0.26, 0.87), transform .3s cubic-bezier(0.21, 0.83, 0.26, 0.87) .3s;
+                    }
+
+                    &:nth-child(2) {
+                        opacity: 0;
+                    }
+
+                    &:last-child {
+                        top: 50%;
+                        transform: translateX(-50%) translateY(0) rotate(-45deg);
+                        transition: bottom .3s cubic-bezier(0.21, 0.83, 0.26, 0.87), transform .3s cubic-bezier(0.21, 0.83, 0.26, 0.87) .3s;
+                    }
+                }
+
+                & ~ nav > .rz_nav--mobile {
+                    left: 200px;
+                }
+            }
+        }
+
+        @include for-size(tablet) {
+            display: flex;
+        }
+
+        .rz_header__btn--line {
+            position: absolute;
+            left: 50%;
+            width: 26px;
+            height: 2px;
+            background-color: #000;
+
+            &:nth-child(1) {
+                top: 0;
+                transform: translateX(-50%) translateY(0);
+                transition: top .3s cubic-bezier(0.21, 0.83, 0.26, 0.87) .3s, transform .3s cubic-bezier(0.21, 0.83, 0.26, 0.87);
+            }
+
+            &:nth-child(2) {
+                top: 8px;
+                opacity: 1;
+                transform: translateX(-50%);
+            }
+
+            &:last-child {
+                top: 16px;
+                transform: translateX(-50%) translateY(0);
+                transition: top .3s cubic-bezier(0.21, 0.83, 0.26, 0.87) .3s, transform .3s cubic-bezier(0.21, 0.83, 0.26, 0.87);
+            }
+        }
+    }
+}
+
+@include for-size(tablet) {
+    .rz_logo {
+        flex-basis: 90%;
+        text-align: center;
+        margin-left: calc(-10% + 4rem);
     }
 }

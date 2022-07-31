@@ -1,10 +1,14 @@
-/** Feuille de style components/push **/
+/** Feuille de style components/rz-push **/
 
 .rz_push {
     display: flex;
     flex-flow: row wrap;
     text-align: center;
     margin-top: 5rem;   
+    @media (max-width: 582px) { 
+        flex-direction: column;
+        align-items: center;
+    }
 
     &__item {
         padding: 3rem 1.5rem;
@@ -15,12 +19,13 @@
         margin-right: 2.5rem;
         margin-bottom: 3.5rem;
 
+
+
         &:last-child {
             margin-right: 0;
             @include for-size(tablet) { 
-                margin-right: 0;
+                margin-right: 2.5rem;
             }
-            
         }
     }
 
@@ -48,10 +53,18 @@
         .rz_push__item {
             max-width: inherit;
             flex-basis: 50%;
+            @include for-size(mobile) {
+                align-items: center;
+                margin-right: 0;
+            }
 
             .rz_btn {
                 margin-top: 2.2rem;
             }
+        }
+
+        @include for-size(mobile) {
+            flex-direction: column;
         }
     }
 }

@@ -9,7 +9,7 @@
     }
 
     &--h2 {
-            @include rz-font-size($font-SSP, 3.4, 700, 42.74px, $font-blue);
+        @include rz-font-size($font-SSP, 3.4, 700, 42.74px, $font-blue);
         &--small {
             @include rz-font-size($font-SSP, 2.8, 700, 36.4px, $font-blue);
         }

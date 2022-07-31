@@ -1,3 +1,4 @@
+/** Feuille de style components/rz-edito **/
 
 .rz_edito {
     display: flex;
@@ -17,7 +18,6 @@
             width: 100vw;
             left: -20px;
         }
-        
     }
 
     @include for-size(mobile) {

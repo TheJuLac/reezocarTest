@@ -13,51 +13,86 @@
 
 <body> 
     <main class="rz">
+        <!-- début section HEADER -->
         <header>
             <div class="rz_header">
-                
-                <div class="rz_header__wrapper">
-                    <a href="#" class="rz_logo" title="page d'accueil"></a> 
-                        <img src="dist/img/logos.svg" alt="logo SG Reezocar" />
-                    </a>
-                </div>
-                <div class="rz_header__wrapper">
-                    <div class="rz_search">
-                        <form class="rz_search-box" action="" method="post">
-                            <label class="rz_search-box__label">Recherche</label>
-                            <div class="rz_search-box__wrapper">
-                                <input class="rz_search-box__input" id="rz_searchBox" placeholder="Marque, Modèle">
-                                <button class="rz_search-box__btn">
-                                    <img src="dist/img/search.svg" alt="Valider recherche" />
-                                </button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <div class="rz_header__wrapper">
-                    <ul class="rz_nav">
-                        <li class="rz_nav__item">
-                            <button class="rz_btn">Financement</button>
-                        </li>
-                        <li class="rz_nav__item">
-                            <a href="#" class="rz_link">Reprise</a>
-                        </li>
-                        <li class="rz_nav__item">
-                            <a href="#" class="rz_link">Offre et services</a>
-                        </li>
-                        <li class="rz_nav__item">
-                            <button class="rz_btn rz_btn--call">
-                                01 87 15 32 04
-                                <span>Appel non surtaxé</span>
+                <div class="rz_header__container">
+                    <div class="rz_header__wrapper">
+                        <div class="rz_header__mobile">
+                            <button class="rz_header__btn" id="menuBurger">
+                                <span class="rz_header__btn--line"></span>
+                                <span class="rz_header__btn--line"></span>
+                                <span class="rz_header__btn--line"></span>
                             </button>
-                        </li>
-                    </ul>
+                            <nav>
+                                <ul class="rz_nav rz_nav--mobile">
+                                    <button class="rz_close" id="closeMenu">
+                                        <img src="dist/img/close.png" alt="icone close">
+                                    </button>
+                                    <li class="rz_nav__item">
+                                        <a href="#" class="rz_btn">Financement</a>
+                                    </li>
+                                    <li class="rz_nav__item">
+                                        <a href="#" class="rz_link">Reprise</a>
+                                    </li>
+                                    <li class="rz_nav__item">
+                                        <a href="#" class="rz_link">Offre et services</a>
+                                    </li>
+                                    <li class="rz_nav__item">
+                                        <button class="rz_btn rz_btn--call">
+                                            01 87 15 32 04
+                                            <span>Appel non surtaxé</span>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <a href="#" class="rz_logo" title="page d'accueil">
+                            <img src="dist/img/logos.svg" alt="logo SG Reezocar" />
+                        </a>
+                    </div>
+                    <div class="rz_header__wrapper">
+                        <div class="rz_search">
+                            <form class="rz_search-box" action="" method="post">
+                                <label class="rz_search-box__label">Recherche</label>
+                                <div class="rz_search-box__wrapper">
+                                    <input class="rz_search-box__input" id="rz_searchBox" placeholder="Marque, Modèle">
+                                    <button class="rz_search-box__btn">
+                                        <img src="dist/img/search.svg" alt="Valider recherche" />
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="rz_header__wrapper">
+                        <nav>
+                            <ul class="rz_nav">
+                                <li class="rz_nav__item">
+                                    <button class="rz_btn">Financement</button>
+                                </li>
+                                <li class="rz_nav__item">
+                                    <a href="#" class="rz_link">Reprise</a>
+                                </li>
+                                <li class="rz_nav__item">
+                                    <a href="#" class="rz_link">Offre et services</a>
+                                </li>
+                                <li class="rz_nav__item">
+                                    <button class="rz_btn rz_btn--call">
+                                        01 87 15 32 04
+                                        <span>Appel non surtaxé</span>
+                                    </button>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
                 </div>
             </div>
         </header>
+        <!-- fin section HEADER -->
         <div class="rz_main">
             <h1 class="rz_title rz_title--h1 text-center">Offre et services</h1>
             <p class="rz_txt text-center">Retrouvez ici tous les services proposés par Reezocar pour vous accompagner pendant toutes les étapes de votre projet automobile.</p>
+            <!-- début section Offres et Services -->
             <section class="rz_keypoints">
                 <div class="rz_keypoints__wrapper">
                     <div class="rz_keypoints__thumbnail">
@@ -141,11 +176,11 @@
                     <img src="dist/img/step2-linkTo-step3.svg" alt="decoration">
                 </div>
             </section>
+            <!-- fin section Offres et Services -->
             <h2 class="rz_title rz_title--h2 text-center">Nos garanties</h1>
             <p class="rz_txt text-center">Retrouvez les garanties correspondant à votre futur véhicule.</p>
-
+            <!-- début section Nos Garanties-->
             <section class="rz_tabs">
-  
                 <input class="rz_tabs__input" type="radio" title="rz-tab-one" name="rz-tabs-input" id="rz-tab-one" checked />
                 <input class="rz_tabs__input" type="radio" title="rz-tab-two" name="rz-tabs-input" id="rz-tab-two" />
                 <input class="rz_tabs__input" type="radio" title="rz-tab-three" name="rz-tabs-input" id="rz-tab-three" />
@@ -278,6 +313,8 @@
                     </div>
                 </div>
             </section>
+            <!-- fin section Nos Garanties-->
+            <!-- début section Reezocar, engagé pour la planète -->
             <section class="rz_edito">
                 <div class="rz_edito__content">
                     <h2 class="rz_title--h2 rz_title--h2--white">Reezocar, engagé pour la planète</h2>
@@ -289,6 +326,8 @@
                     <img src="dist/img/plantact.png" alt="photo plant & act" />
                 </div>
             </section>
+            <!-- fin section Reezocar, engagé pour la planète -->
+            <!-- début section Mentions Légales -->
             <section class="rz_mentions">
                 <p class="rz_txt rz_txt--mentions"><span class="rz_txt--bold">Garantie valeur d’achat :</span> (1) Dans la limite des conditions et garanties prévues au contrat. Prestation disponible en crédit et en Location avec Option d’Achat. Contrat d’assurance collective de dommages « Garantie Valeur d&#39;Achat » souscrit par CGL auprès de SOGESSUR, entreprise régie par le Code des assurances. Contrat « Assistance Véhicule de Remplacement » souscrit par CGL auprès d’OPTEVEN ASSURANCES. Contrats présentés par CGL, courtier d’assurance, n° ORIAS 07027148 (www.orias.fr) via ses mandataires. Sous réserve d’acceptation par CGL, Compagnie Générale de Location d’Équipements, CGI FINANCE, SA au capital de 58 606 156 € - 69 avenue de Flandre 59 708 Marcq-en-Baroeul Cedex – SIREN 303 236 186 – RCS Lille Métropole. CGL est une société du Groupe Société Générale.</p>
                 <p class="rz_txt rz_txt--mentions"><span class="rz_txt--bold">Assurance protection pécuniaire :</span> (1) Dans la limite des conditions et garanties prévues au contrat. Prestation disponible en crédit, en Location avec Option d’Achat et en Location Longue Durée.</br>
@@ -296,12 +335,14 @@
                 <p class="rz_txt rz_txt--mentions"><span class="rz_txt--bold">Révision et pièces d’usures (RPU) :</span> (1) Dans la limite des conditions et garanties prévues au contrat. Prestation disponible en crédit, en Location avec Option d’Achat et en Location Longue Durée. Contrat de prestation de services « Révisions et Pièces d’Usure » et contrat d’assurance collective de dommages « Réparation Pneus » souscrits par CGL auprès  espectivement d’OPTEVEN SERVICES et d’OPTEVEN ASSURANCES. Contrats présentés par CGL, courtier d’assurance, n° ORIAS 07027148 (www.orias.fr) via ses  andataires. Sous réserve d’acceptation par CGL, Compagnie Générale de Location d’Équipements, CGI FINANCE, SA au capital de 58 606 156 € - 69 avenue de Flandre 59 708 Marcq-en-Baroeul Cedex – SIREN 303 236 186 – RCS Lille Métropole. CGL est une société du Groupe Société Générale.</p>
                 <p class="rz_txt rz_txt--mentions"><span class="rz_txt--bold">Garantie mécanique ou garantie longue durée (GLD) :</span> (1) Dans la limite des conditions et garanties prévues au contrat. Prestation disponible en crédit, en Location avec Option d’Achat et en Location Longue Durée. Contrat d’assurance collective de dommages « Garantie Longue Durée Essentielle ou Intégrale ou Élitisse » souscrit par CGL auprès de SOGESSUR, entreprise régie par le Code des assurances (prestations mises en œuvre par OPTEVEN ASSURANCES). Contrat d’assistance « CGI Finance Assistance » souscrit par CGL auprès d’OPTEVEN ASSURANCES. Contrats présentés par CGL, courtier d’assurance, n° ORIAS 07027148 (www.orias.fr) via ses andataires. Sous réserve d’acceptation par CGL, Compagnie Générale de Location d’Équipements, CGI FINANCE, SA au capital de 58 606 156 € - 69 avenue de Flandre 59 708 Marcq-en-Baroeul Cedex – SIREN 303 236 186 – RCS Lille Métropole. CGL est une société du Groupe Société Générale.</p>
             </section>
+            <!-- fin section Mentions Légales -->
             <div class="rz_banner rz_banner--grey">
                 <p>Un crédit vous engage et doit être remboursé. Vérifiez vos capacités de remboursement avant de vous engager.</p>
             </div>
             <div class="rz_banner">
                 <p>Pour les trajets courts, privilégiez la marche ou le vélo  #SeDéplacerMoinsPolluer</p>
             </div>
+            <!-- début section Footer -->
             <footer class="rz_footer">
                 <div class="rz_footer__container">
                     <div class="rz_footer__wrapper">
@@ -379,6 +420,9 @@
                 </div>
                 <p class="rz_footer__copyrights">Reezocar 2020 - Tous droits réservés</p>
             </footer>
+            <!-- fin section Footer -->
         </div>
+        <div class="overlay" id="overlay"></div>
     </main>
+    <script src="dist/js/functions.js"></script>
 </body>

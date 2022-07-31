@@ -1,4 +1,4 @@
-/** Feuille de style components/nav **/
+/** Feuille de style components/rz-nav **/
 
 .rz_nav {
     display: flex;
@@ -9,23 +9,25 @@
         align-items: center;
         font-weight: 600;
         margin: 0 3rem;
-        @include for-size(desktop-sm) { 
+
+        @include for-size(desktop-sm) {
             margin: 0 1rem;
         }
 
-        @include for-size(desktop-sm) { 
+        @include for-size(desktop-sm) {
             &:nth-child(2) {
                 margin-left: 2rem;
             }
         }
 
-        & > .rz_btn {
+        &>.rz_btn {
             font-family: 'Source Sans Pro', sans-serif;
             font-size: 1.6rem;
             font-weight: 600;
             color: $font-blue;
             padding-right: 0;
-            @include for-size(desktop-sm) { 
+
+            @include for-size(desktop-sm) {
                 padding-left: 1rem;
             }
 
@@ -34,6 +36,7 @@
                 border-radius: 2.4rem;
                 text-align: center;
                 position: relative;
+
                 &:before {
                     content: '';
                     background-image: url('../../dist/img/phone.svg');
@@ -45,7 +48,8 @@
                     transform: translateY(-50%);
                     width: 1.6rem;
                     height: 1.6rem;
-                    }
+                }
+
                 span {
                     display: block;
                     font-size: 1rem;
@@ -56,12 +60,14 @@
 
         &:first-child {
             margin-left: 0;
-            & > .rz_btn {
+
+            &>.rz_btn {
                 &:first-child {
                     position: relative;
+
                     &:after {
                         display: block;
-                        content:"";
+                        content: "";
                         background-image: url('../../dist/img/arrow.svg');
                         background-size: contain;
                         background-repeat: no-repeat;
@@ -78,9 +84,72 @@
 
         &:last-child {
             margin-right: 0;
-            & > .rz_btn {
+
+            &>.rz_btn {
                 background-color: $red-sg;
                 color: $white;
+            }
+        }
+    }
+
+    &--mobile {
+        display: none;
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100vh;
+        padding: 8rem 4rem;
+        background-color: #e9e9e9;
+        transform: translateX(-100%);
+        transition: all .2s ease-out;
+        cursor: default;
+
+        @include for-size(tablet) {
+            display: block;
+        }
+
+        .rz_nav__item {
+            padding: 2rem 0;
+            cursor: pointer;
+
+            &:first-child {
+                .rz_btn {
+                    &:after {
+                        display: none;
+                    }
+                }
+            }
+
+            &:nth-child(2) {
+                margin: 0 1rem;
+            }
+
+            &:last-child {
+                position: absolute;
+                bottom: 0;
+                right: 20px;
+            }
+            & > .rz_btn {
+                padding: 0;
+
+                &--call {
+                    padding: .8rem 2rem .7rem 4.4rem;
+                }
+            }
+
+
+
+        }
+
+        .rz_close {
+            position: absolute;
+            top: 15px;
+            right: 0;
+            cursor: pointer;
+
+            img {
+                width: 44px;
+                height: 44px;
             }
         }
     }

@@ -1,4 +1,4 @@
-/** Feuille de style components/keypoints **/
+/** Feuille de style components/rz-keypoints **/
 
 .rz_keypoints {
     margin-top: 5.8rem;
@@ -32,8 +32,12 @@
                     max-height: 25.5rem;
                 }
 
+                @include for-size(mobile) { 
+                    max-height: 17.5rem;
+                }
             }
         }
+
         @include for-size(mobile) {
             flex-direction: column;
         }
@@ -77,12 +81,13 @@
                         position: inherit;
                         margin-right: 0;
                     }
-                    
                 }
+
                 @include for-size(tablet) {
                     flex-basis: 20%;
                 }
             }
+            
             @include for-size(tablet) { 
                 flex-direction: column-reverse;
                 margin-bottom: 0;
