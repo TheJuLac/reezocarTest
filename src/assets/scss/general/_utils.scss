@@ -18,8 +18,13 @@ button {
     top: 0;
     left: 0;
     transition: all .25s ease-in-out;
-    z-index: 2;
+    z-index: -1;
+    display: none;
+    @include for-size(tablet) { 
+        display: block;
+    }
     &.active {
         opacity: .45;
+        z-index: 2;
     }
 }

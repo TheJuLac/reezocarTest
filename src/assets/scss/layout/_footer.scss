@@ -49,6 +49,7 @@
     &__link {
         @include rz-font-size($font-SSP, 1.6, 400, 29px, $font-blue);
         text-decoration: none;
+        cursor: pointer;
     }
 
     &__social-sharing {
